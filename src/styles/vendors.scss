@@ -1,0 +1,87 @@
+/**
+ * 第三方元件樣式適配
+ */
+
+// NProgress 進度條樣式
+#nprogress .bar {
+  background-color: var(--el-color-primary);
+}
+
+// Vxe UI / VxeTable 變數覆寫（4.7+ 使用 --vxe-ui-*）
+:root {
+  --vxe-ui-font-color: var(--el-text-color-regular);
+  --vxe-ui-font-primary-color: var(--el-color-primary);
+  --vxe-ui-status-success-color: var(--el-color-success);
+  --vxe-ui-status-info-color: var(--el-color-info);
+  --vxe-ui-status-warning-color: var(--el-color-warning);
+  --vxe-ui-status-danger-color: var(--el-color-danger);
+  --vxe-ui-font-lighten-color: var(--el-text-color-primary);
+  --vxe-ui-font-primary-lighten-color: var(--el-color-primary-light-3);
+  --vxe-ui-status-success-lighten-color: var(--el-color-success-light-3);
+  --vxe-ui-status-info-lighten-color: var(--el-color-info-light-3);
+  --vxe-ui-status-warning-lighten-color: var(--el-color-warning-light-3);
+  --vxe-ui-status-danger-lighten-color: var(--el-color-danger-light-3);
+  --vxe-ui-font-darken-color: var(--el-text-color-secondary);
+  --vxe-ui-font-primary-darken-color: var(--el-color-primary-dark-2);
+  --vxe-ui-status-success-darken-color: var(--el-color-success-dark-2);
+  --vxe-ui-status-info-darken-color: var(--el-color-info-dark-2);
+  --vxe-ui-status-warning-darken-color: var(--el-color-warning-dark-2);
+  --vxe-ui-status-danger-darken-color: var(--el-color-danger-dark-2);
+  --vxe-ui-font-disabled-color: var(--el-text-color-disabled);
+  --vxe-ui-font-primary-disabled-color: var(--el-color-primary-light-5);
+  --vxe-ui-status-success-disabled-color: var(--el-color-success-light-5);
+  --vxe-ui-status-info-disabled-color: var(--el-color-info-light-5);
+  --vxe-ui-status-warning-disabled-color: var(--el-color-warning-light-5);
+  --vxe-ui-status-danger-disabled-color: var(--el-color-danger-light-5);
+  --vxe-ui-input-border-color: var(--el-border-color);
+  --vxe-ui-input-disabled-color: var(--el-text-color-disabled);
+  --vxe-ui-input-disabled-background-color: var(--el-fill-color-light);
+  --vxe-ui-input-placeholder-color: var(--el-text-color-placeholder);
+  --vxe-ui-base-popup-border-color: var(--el-border-color);
+  --vxe-ui-table-header-font-color: var(--el-text-color-regular);
+  --vxe-ui-table-footer-font-color: var(--el-text-color-regular);
+  --vxe-ui-table-border-color: var(--el-border-color-lighter);
+  --vxe-ui-table-header-background-color: var(--el-bg-color);
+  --vxe-ui-table-footer-background-color: var(--el-bg-color);
+  --vxe-ui-layout-background-color: var(--el-bg-color);
+  --vxe-ui-table-row-hover-background-color: var(--el-fill-color-light);
+  --vxe-ui-table-row-current-background-color: var(--el-fill-color-light);
+  --vxe-ui-table-row-hover-current-background-color: var(--el-fill-color-light);
+  --vxe-ui-table-checkbox-range-background-color: var(--el-fill-color-light);
+  --vxe-ui-loading-color: var(--el-color-primary);
+  --vxe-ui-loading-background-color: var(--el-mask-color);
+  --vxe-ui-table-validate-error-color: var(--el-color-danger);
+  --vxe-ui-toolbar-custom-active-background-color: var(--el-bg-color-overlay);
+  --vxe-ui-modal-header-background-color: var(--el-bg-color);
+  --vxe-ui-form-validate-error-color: var(--el-color-danger);
+  --vxe-ui-select-option-hover-background-color: var(--el-bg-color-overlay);
+}
+
+// VxeTable 自定義樣式
+.vxe-grid {
+  &--form-wrapper .vxe-form {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  &--toolbar-wrapper .vxe-toolbar {
+    padding: 20px;
+  }
+
+  &--pager-wrapper .vxe-pager {
+    height: 70px;
+    padding: 0 20px;
+
+    &--wrapper {
+      @media screen and (width <= 768px) {
+        .vxe-pager--total,
+        .vxe-pager--sizes,
+        .vxe-pager--jump,
+        .vxe-pager--jump-prev,
+        .vxe-pager--jump-next {
+          display: none;
+        }
+      }
+    }
+  }
+}

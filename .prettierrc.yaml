@@ -1,0 +1,49 @@
+# 在單引數箭頭函式中始終新增括號
+arrowParens: "always"
+# JSX 多行元素的閉合標籤另起一行
+bracketSameLine: false
+# 物件字面量中的括號之間新增空格
+bracketSpacing: true
+# 自動格式化嵌入的程式碼（如 Markdown 和 HTML 內的程式碼）
+embeddedLanguageFormatting: "auto"
+# 忽略 HTML 空白敏感度，將空白視為非重要內容
+htmlWhitespaceSensitivity: "ignore"
+# 不插入 @prettier 的 pragma 註釋
+insertPragma: false
+# 在 JSX 中使用雙引號
+jsxSingleQuote: false
+# 每行程式碼的最大長度限制為 100 字元
+printWidth: 100
+# 在 Markdown 中保留原有的換行格式
+proseWrap: "preserve"
+# 僅在必要時新增物件屬性的引號
+quoteProps: "as-needed"
+# 不要求檔案開頭插入 @prettier 的 pragma 註釋
+requirePragma: false
+# 在語句末尾新增分號
+semi: true
+# 使用雙引號而不是單引號
+singleQuote: false
+# 縮排使用 2 個空格
+tabWidth: 2
+# 在多行元素的末尾新增逗號（ES5 支援的物件、陣列等）
+trailingComma: "es5"
+# 使用空格而不是製表符縮排
+useTabs: false
+# Vue 檔案中的 <script> 和 <style> 不增加額外的縮排
+vueIndentScriptAndStyle: false
+# 統一使用 LF 換行符，避免跨平臺差異產生大量 diff
+endOfLine: "lf"
+# Pug class 維持 attribute 寫法，避免 UnoCSS 的 hover: / w-[ ] 被轉成非法 class 捷徑
+pugClassNotation: "attribute"
+pugIdNotation: "as-is"
+pugAttributeSeparator: "none"
+pugSortAttributes: "as-is"
+pugFramework: "vue"
+# 對 HTML 檔案應用特定格式化規則
+overrides:
+  - files: "*.html"
+    options:
+      parser: "html"
+plugins:
+  - "@prettier/plugin-pug"

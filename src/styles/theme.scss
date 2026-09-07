@@ -1,0 +1,29 @@
+/**
+ * 主題變數定義
+ */
+
+:root {
+  --menu-background: #304156;
+  --menu-text: #bfcbd9;
+  --menu-active-text: #ffffff;
+  --menu-active-bg: color-mix(in srgb, var(--el-color-primary) 22%, transparent);
+  --menu-hover: rgb(255 255 255 / 7%);
+  --menu-border: rgb(15 23 42 / 22%);
+  --sidebar-logo-background: #2d3748;
+  --sidebar-logo-text-color: #fff;
+  --page-bg: #f6f8fc;
+  --content-bg: #ffffff;
+  --border-color: #e3eaf3;
+  --card-border: #dfe7f1;
+  --card-border-hover: #d5dfec;
+  --card-radius: 8px;
+  --card-shadow: 0 1px 2px rgb(15 23 42 / 3%);
+  --card-shadow-hover: 0 10px 24px rgb(15 23 42 / 6%), 0 2px 6px rgb(15 23 42 / 4%);
+  --custom-radius: 8px;
+  --page-padding: 10px;
+  --page-gap: 10px;
+}
+
+html.color-weak {
+  filter: invert(80%);
+}

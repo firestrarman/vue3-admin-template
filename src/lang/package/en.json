@@ -1,0 +1,40 @@
+{
+  "route": {
+    "dashboard": "Dashboard",
+    "document": "Document"
+  },
+  "login": {
+    "welcome": "Welcome back",
+    "subtitle": "Sign in with your account to continue",
+    "username": "Username",
+    "password": "Password",
+    "login": "Sign in",
+    "captchaCode": "Captcha",
+    "capsLock": "Caps Lock is On",
+    "rememberMe": "Remember Me",
+    "message": {
+      "username": {
+        "required": "Please enter Username"
+      },
+      "password": {
+        "required": "Please enter Password",
+        "min": "The password can not be less than 6 digits"
+      },
+      "captchaCode": {
+        "required": "Please enter captcha"
+      }
+    }
+  },
+  "navbar": {
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "document": "Document",
+    "gitee": "Gitee",
+    "profile": "User Profile"
+  },
+  "langSelect": {
+    "message": {
+      "success": "Switch Language Successful!"
+    }
+  }
+}

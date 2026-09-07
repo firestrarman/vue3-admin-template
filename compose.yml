@@ -1,0 +1,16 @@
+services:
+  vue3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    working_dir: /app
+
+    ports:
+      - "3000:3000"
+
+    volumes:
+      - .:/app
+
+    environment:
+      NODE_ENV: development

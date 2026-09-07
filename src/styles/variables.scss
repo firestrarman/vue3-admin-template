@@ -1,0 +1,18 @@
+/**
+ * SCSS 變數定義
+ */
+
+// 佈局尺寸
+$sidebar-width: 210px;
+$sidebar-width-collapsed: 54px;
+$navbar-height: 48px;
+$tags-view-height: 38px;
+$sidebar-toggle-height: 50px;
+
+// 選單配色（對映 theme.scss 的 CSS 變數）
+$menu-background: var(--menu-background);
+$menu-text: var(--menu-text);
+$menu-active-text: var(--menu-active-text);
+$menu-hover: var(--menu-hover);
+$sidebar-logo-background: var(--sidebar-logo-background);
+$sidebar-logo-text-color: var(--sidebar-logo-text-color);

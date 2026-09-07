@@ -1,0 +1,26 @@
+// Element Plus Sass 主題變數
+// 透過 vite.config.ts additionalData 注入，必須在元件 Sass 載入前生效。
+// 品牌色以此檔案為唯一來源，Element Plus 會據此生成 light / dark 色階。
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": #409eff,
+    ),
+    "success": (
+      "base": #67c23a,
+    ),
+    "warning": (
+      "base": #e6a23c,
+    ),
+    "danger": (
+      "base": #f56c6c,
+    ),
+    "info": (
+      "base": #909399,
+    ),
+  ),
+
+  $bg-color: (
+    "page": #f5f7fb,
+  )
+);

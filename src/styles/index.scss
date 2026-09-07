@@ -1,0 +1,15 @@
+/**
+ * 樣式總入口
+ */
+
+// 1. 基礎與主題層
+@use "./theme";
+@use "./reset";
+
+// 2. 第三方適配層
+@use "./element-plus-overrides";
+@use "./vendors";
+
+// 3. 佈局與頁面層
+@use "./layout";
+@use "./page";
